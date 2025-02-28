@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.nasaexplorer.ui.fragments.Home"
+        android:label="Movies" />
+
+    <!-- Graph Fragment -->
+    <fragment
+        android:id="@+id/imagesFragment"
+        android:name="com.example.nasaexplorer.ui.fragments.Images"
+        android:label="Graph" />
+
+    <!-- Favorites Fragment -->
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.nasaexplorer.ui.fragments.News"
+        android:label="Favorites" />
+
+</navigation>
