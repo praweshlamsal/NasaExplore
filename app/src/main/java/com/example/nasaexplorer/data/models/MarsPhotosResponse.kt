@@ -1,20 +1,19 @@
 package com.example.nasaexplorer.data.models
 
 data class MarsPhotosResponse(
-    val photos: List<Photo>
+    val photos: List<MarsPhoto>
 )
 
-data class Photo(
+data class MarsPhoto(
     val id: Int,
-    val sol: Int,
-    val camera: Camera,
     val img_src: String,
-    val earth_date: String
+    val earth_date: String,
+    val rover: Rover
 )
 
-data class Camera(
-    val id: Int,
+data class Rover(
     val name: String,
-    val rover_id: Int,
-    val full_name: String
+    val landing_date: String,
+    val launch_date: String,
+    val status: String
 )

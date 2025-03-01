@@ -44,4 +44,18 @@
     </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mars_photo_description">Mars Rover Photo</string>
+
+    <!-- App Description -->
+    <string name="app_description">
+        This app provides information about Near-Earth Objects (NEOs) using NASA\'s API.
+        It displays details such as name, diameter, hazardous status, and approach date.
+    </string>
+
+    <!-- Group Members -->
+    <string name="group_members">
+        Group Members:
+        1. Prawesh Lamsal
+        2. Sunny Gurung
+    </string>
 </resources>

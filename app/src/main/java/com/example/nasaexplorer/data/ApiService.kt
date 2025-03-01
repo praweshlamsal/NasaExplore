@@ -2,6 +2,7 @@ package com.example.nasaexplorer.data
 
 import com.example.nasaexplorer.data.models.APODModel
 import com.example.nasaexplorer.data.models.MarsPhotosResponse
+import com.example.nasaexplorer.data.models.NEOResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -10,7 +11,13 @@ interface ApiService {
     suspend fun getApodData(@Query("api_key") apiKey: String): APODModel
 
     @GET("mars-photos/api/v1/rovers/curiosity/photos")
-    suspend fun getMarsPhotos(@Query("earth_date") date: String, @Query("api_key") apiKey: String): MarsPhotosResponse
+    suspend fun getMarsPhotos(
+        @Query("earth_date") earthDate: String,
+        @Query("api_key") apiKey: String
+    ): MarsPhotosResponse
 
-    // Add other endpoints (e.g., Mars Weather, Launches)
+    @GET("neo/rest/v1/feed")
+    suspend fun getNEOData(
+        @Query("api_key") apiKey: String
+    ): NEOResponse
 }
