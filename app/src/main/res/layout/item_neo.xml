@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp"
+    android:layout_margin="4dp"
     app:cardCornerRadius="12dp"
     app:cardElevation="4dp"
     app:cardUseCompatPadding="true">
@@ -14,7 +14,6 @@
         android:padding="16dp"
         android:background="@android:color/white">
 
-        <!-- Name -->
         <TextView
             android:id="@+id/neoNameTextView"
             android:layout_width="0dp"
@@ -27,7 +26,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- Diameter -->
         <TextView
             android:id="@+id/neoDiameterTextView"
             android:layout_width="0dp"
