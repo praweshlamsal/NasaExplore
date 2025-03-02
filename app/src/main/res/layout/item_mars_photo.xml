@@ -3,28 +3,55 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:elevation="4dp"
+    android:clipToPadding="false">
 
-    <ImageView
-        android:id="@+id/marsPhotoImageView"
+    <!-- ImageView with rounded corners and shadow -->
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="@string/mars_photo_description" />
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:clipToPadding="false"
+        android:padding="4dp">
 
+        <ImageView
+            android:id="@+id/marsPhotoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/mars_photo_description"
+            android:background="@drawable/rounded_corners" />
+    </FrameLayout>
+
+    <!-- TextView for Earth Date with improved styling -->
     <TextView
         android:id="@+id/marsPhotoDateTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Earth Date: 2023-10-01"
-        android:textSize="14sp"
-        android:padding="8dp" />
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:padding="8dp"
+        android:drawableStart="@drawable/ic_calendar"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"/>
 
+    <!-- TextView for Rover Name with improved styling -->
     <TextView
         android:id="@+id/marsRoverNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rover: Curiosity"
-        android:textSize="14sp"
-        android:padding="8dp" />
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:padding="8dp"
+        android:drawableStart="@drawable/ic_rover"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-medium"/>
+
 </LinearLayout>

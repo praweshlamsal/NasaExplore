@@ -12,7 +12,7 @@ interface ApiService {
 
     @GET("mars-photos/api/v1/rovers/curiosity/photos")
     suspend fun getMarsPhotos(
-        @Query("earth_date") earthDate: String,
+        @Query("sol") earthDate: String,
         @Query("api_key") apiKey: String
     ): MarsPhotosResponse
 

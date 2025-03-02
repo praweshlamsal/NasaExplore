@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="#BDBDBD" /> <!-- Darker Gray Background -->
+    </item>
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@android:drawable/ic_dialog_alert" /> <!-- Default Alert Icon -->
+    </item>
+</layer-list>

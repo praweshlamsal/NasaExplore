@@ -26,6 +26,7 @@ class Images : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentImagesBinding.inflate(inflater, container, false)
+
         return binding.root
     }
 
@@ -47,7 +48,7 @@ class Images : Fragment() {
         }
 
         // Fetch Mars Rover photos
-        viewModel.fetchMarsPhotos("2023-10-01", "4WOrKBWQqMfMn5t1EGPf7qzsAvNn5u14g1zmN8Lf")
+        viewModel.fetchMarsPhotos("1000", "4WOrKBWQqMfMn5t1EGPf7qzsAvNn5u14g1zmN8Lf")
     }
 
     override fun onDestroyView() {

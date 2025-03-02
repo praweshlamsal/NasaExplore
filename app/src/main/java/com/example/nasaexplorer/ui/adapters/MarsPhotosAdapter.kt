@@ -25,7 +25,12 @@ class MarsPhotosAdapter(private val photos: List<MarsPhoto>) : RecyclerView.Adap
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val photo = photos[position]
-        Glide.with(holder.itemView.context).load(photo.img_src).into(holder.imageView)
+        Glide.with(holder.itemView.context)
+            .load(photo.img_src)
+            .placeholder(R.drawable.placeholder_image)
+            .error(R.drawable.error_image)
+            .into(holder.imageView)
+
         holder.dateTextView.text = "Earth Date: ${photo.earth_date}"
         holder.roverNameTextView.text = "Rover: ${photo.rover.name}"
     }
