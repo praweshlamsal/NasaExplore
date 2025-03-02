@@ -48,14 +48,17 @@
 
     <!-- App Description -->
     <string name="app_description">
-        This app provides information about Near-Earth Objects (NEOs) using NASA\'s API.
-        It displays details such as name, diameter, hazardous status, and approach date.
+        NasaExplorer is your gateway to the wonders of space!
+        Explore stunning Astronomy Pictures of the Day (APOD),
+        track Near-Earth Objects (NEOs), and discover breathtaking
+        Mars Rover Photos—all in one app. Stay connected to the cosmos
+        and uncover the mysteries of the universe with NasaExplorer.
     </string>
 
     <!-- Group Members -->
     <string name="group_members">
-        Group Members:
-        1. Prawesh Lamsal
-        2. Sunny Gurung
-    </string>
+    Group Members:\n
+    1. Prawesh Lamsal\n
+    2. Sunny Gurung
+</string>
 </resources>

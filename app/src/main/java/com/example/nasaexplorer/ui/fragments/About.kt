@@ -1,6 +1,7 @@
 package com.example.nasaexplorer.ui.fragments
 
 import android.os.Bundle
+import android.text.Html
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,6 +27,6 @@ class About : Fragment() {
 
         // Set app description and group members
         binding.appDescription.text = getString(R.string.app_description)
-        binding.groupMembers.text = getString(R.string.group_members)
-    }
+        val groupMembersText = getString(R.string.group_members)
+        binding.groupMembers.text = groupMembersText.replace("\\n", "\n")    }
 }
